@@ -30,7 +30,7 @@ const TimelineWork = () => {
     contentArrowStyle={{ borderRight: '7px solid  #33332d' }}
     date="Jan 2024 - Present"
     dateClassName='text'
-    iconStyle={{ background: '#33332d', color: '#fff' }}
+    iconStyle={{ background: '#33332d', color: '#fff'}}
     icon={<IoIosCheckmarkCircleOutline></IoIosCheckmarkCircleOutline>}
   >
     <h3 className="vertical-timeline-element-title">Research Consultant, WorldQuant</h3>

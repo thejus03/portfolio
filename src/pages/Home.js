@@ -1,8 +1,9 @@
-import myImage from "../me.png"
+import myImage from "../me.webp"
 import Navbar from "../components/Navbar"
 import Tw from "../components/typewriter"
 import Links from "../components/links"
 import { motion } from "framer-motion"
+import { Skeleton } from '@mui/material';
 const Home = () => {
     
     return (
@@ -13,7 +14,9 @@ const Home = () => {
                 exit={{ opacity: 0 }}
             >
             <div style={{display:"flex", justifyContent:"center",margin:"7vh"}}>
-                <img className='profilepic' src={myImage} alt="Me" loading="lazy"></img>
+                {myImage ? (
+                <img className='profilepic' src={myImage} alt="Me" loading="lazy"></img>): <Skeleton className="profilepic"/>}  
+
             </div>
             <Tw />
             <Links />

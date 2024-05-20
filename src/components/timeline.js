@@ -16,7 +16,7 @@ const Timeline = () => {
     icon={<LiaUniversitySolid></LiaUniversitySolid>}
   >
     <h3 className="vertical-timeline-element-title">National University of Singapore (NUS)</h3>
-    <h4 className="vertical-timeline-element-subtitle">B.Comp, Computer Science and Quantitative Finance</h4>
+    <h4 className="vertical-timeline-element-subtitle">B.Comp, Computer Science</h4>
     <p>
         Freshman at NUS
     </p>

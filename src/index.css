@@ -34,10 +34,11 @@ code {
   font-weight: 700;
 }
 .profilepic{
-  height:auto;
+  aspect-ratio: 1/0.96;
   border-radius: 100%;
-  border:3px solid var(--color-text);
+  border:5px solid var(--color-text);
 }
+
 
 .hamburger {
   margin:1vw;

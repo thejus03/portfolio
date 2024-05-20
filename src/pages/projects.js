@@ -1,9 +1,9 @@
 import Navbar from "../components/Navbar"
-import hackomania from "../hackomania.png"
-import hacko2 from "../hacko2.png"
-import uniplanner from "../uniplanner.png"
-import TER from "../TER.png"
-import foodcritic from "../foodcritic.png"
+import hackomania from "../hackomania.webp"
+import hacko2 from "../hacko2.webp"
+import uniplanner from "../uniplanner.webp"
+import TER from "../TER.webp"
+import foodcritic from "../foodcritic.webp"
 import '@coreui/coreui/dist/css/coreui.min.css'
 import { CCard,CCardBody,CCardImage, CCardTitle,CCardText,CCardLink,CCardSubtitle } from '@coreui/react'
 import { motion } from "framer-motion"
@@ -37,7 +37,7 @@ const Projects = () => {
             <div className="masonry-container">
                 <div className="masonry-item">
                     <CCard className="ccard"><CCardLink href="https://github.com/thejus03/onepercent" className="text" style={{textDecoration : "none"}}>
-                    <CCardImage orientation="top" src={hackomania} loading="lazy"/>
+                    {hackomania ? (<CCardImage orientation="top" src={hackomania} loading="lazy"/>) : (<CCardImage orientation="top" height="200px" style={{backgroundColor: "#868e96"}} ></CCardImage>)}
                     <CCardBody>
                         <CCardTitle className="text"><h2 className="text1">Hack-O-Mania'24</h2></CCardTitle>
                         <CCardSubtitle><RiNextjsFill size={30}></RiNextjsFill> <RiTailwindCssFill size={30}></RiTailwindCssFill> <BiLogoFlask size={30}></BiLogoFlask> <BiLogoPostgresql size={30}></BiLogoPostgresql> <RiOpenaiFill size={30}></RiOpenaiFill></CCardSubtitle>
@@ -53,14 +53,14 @@ const Projects = () => {
                         <div>
                         <i><u>Click me for Github info</u></i></div>
                         </CCardText>
-                    </CCardBody>
-                    <CCardImage orientation="bottom" src={hacko2} loading="lazy"/>
+                    </CCardBody>    
+                    {hacko2 ? (<CCardImage orientation="bottom" src={hacko2} loading="lazy"/>) : (<CCardImage orientation="bottom" height="200px" style={{backgroundColor: "#868e96"}} ></CCardImage>)}
                     </CCardLink>
                     </CCard>
                 </div>
                 <div className="masonry-item" >
                     <CCard className="ccard"><CCardLink href="https://github.com/thejus03/Text-Emotion-Neural" className="text" style={{textDecoration : "none"}}>
-                    <CCardImage orientation="top" src={TER} loading="lazy"/>
+                    {TER ? (<CCardImage orientation="top" src={TER} loading="lazy"/>) : (<CCardImage orientation="top" height="200px" style={{backgroundColor: "#868e96"}} ></CCardImage>)}
                     <CCardBody>
                         <CCardTitle className="text"><h2 className="text1">Text Emotion Recognition</h2></CCardTitle>
                         <CCardSubtitle><FaPython size={30} style={{marginRight: "10px"}}></FaPython><SiKeras size={30} style={{marginRight: "10px"}}></SiKeras><SiNumpy size={30} style={{marginRight: "10px"}}></SiNumpy><SiPandas size={30} style={{marginRight: "10px"}}></SiPandas><SiTensorflow size={30} style={{marginRight: "10px"}}></SiTensorflow><SiScikitlearn size={30} style={{marginRight: "10px"}}></SiScikitlearn></CCardSubtitle>
@@ -85,7 +85,7 @@ const Projects = () => {
                 </div>
                 <div className="masonry-item">
                     <CCard className="ccard"><CCardLink href="https://github.com/thejus03/uniplanner" className="text" style={{textDecoration : "none"}}>
-                    <CCardImage orientation="top" src={uniplanner} loading="lazy"/>
+                    {uniplanner ? (<CCardImage orientation="top" src={uniplanner} loading="lazy"/>) : (<CCardImage orientation="top" height="200px" style={{backgroundColor: "#868e96"}} ></CCardImage>)}
                     <CCardBody>
                         <CCardTitle className="text"><h2 className="text1">UniPlanner</h2></CCardTitle>
                         <CCardSubtitle><SiDjango size={30} style={{marginRight: "10px"}}></SiDjango><FaPython size={30} style={{marginRight: "10px"}}></FaPython><IoLogoJavascript size={30} style={{marginRight: "10px"}}></IoLogoJavascript><FaCss3Alt size={30} style={{marginRight: "10px"}}></FaCss3Alt><SiSqlite size={30} style={{marginRight: "10px"}}></SiSqlite></CCardSubtitle>
@@ -106,7 +106,7 @@ const Projects = () => {
                 </div>
                 <div className="masonry-item">
                     <CCard className="ccard"><CCardLink href="https://github.com/thejus03/foodcritic" className="text" style={{textDecoration : "none"}}>
-                    <CCardImage orientation="top" src={foodcritic} loading="lazy"/>
+                    {foodcritic ? (<CCardImage orientation="top" src={foodcritic} loading="lazy"/>) : (<CCardImage orientation="top" height="200px" style={{backgroundColor: "#868e96"}} ></CCardImage>)}
                     <CCardBody>
                         <CCardTitle className="text"><h2 className="text1">FoodCritic</h2></CCardTitle>
                         <CCardSubtitle><BiLogoFlask size={30} style={{marginRight: "10px"}}></BiLogoFlask><FaPython size={30} style={{marginRight: "10px"}}></FaPython><IoLogoJavascript size={30} style={{marginRight: "10px"}}></IoLogoJavascript><FaCss3Alt size={30} style={{marginRight: "10px"}}></FaCss3Alt><SiSqlite size={30} style={{marginRight: "10px"}}></SiSqlite><RiOpenaiFill size={30} style={{marginRight: "10px"}}></RiOpenaiFill></CCardSubtitle>
